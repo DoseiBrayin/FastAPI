@@ -1,5 +1,5 @@
 # controllers.py
-from models import user_model
+from UserItem.models import user_model
 def get_item(item_id: int) -> user_model.Item:
     """
     Obtiene un item según su ID.

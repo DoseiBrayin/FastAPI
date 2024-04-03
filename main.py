@@ -1,8 +1,8 @@
 # main.py
 from fastapi import FastAPI
-from models import user_model
-from controller import user_controller
 from fastapi.middleware.cors import CORSMiddleware
+from UserItem.controller import user_controller
+from UserItem.models import user_model
 
 app = FastAPI()
 
