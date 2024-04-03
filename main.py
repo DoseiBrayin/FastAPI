@@ -4,7 +4,7 @@ from models import user_model
 from controller import user_controller
 
 app = FastAPI()
-
+# Aquí estamos definiendo las rutas de nuestra API
 @app.get("/items/{item_id}", response_model=user_model.Item)
 def read_item(item_id: int):
     return user_controller.get_item(item_id)
